@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hourly Logger</title>
+  <style>
+    body {
+       overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0.2rem;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    textarea {
+      width: 80%;
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+    button {
+      display: block;
+      width: 80%;
+      padding: 0.5rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 4px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hourly Logger</h1>
+  <textarea id="activity-log" placeholder="Write what you completed in the last hour..."></textarea>
+  <button id="save-log">Save Activity</button>
+  <button id="download-log">Download All Logs</button>
+  <script src="popup.js"></script>
+</body>
+</html>
